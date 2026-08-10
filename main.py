@@ -1,7 +1,5 @@
 import os
 
-# made by kurlwin on github (https://github.com/Kurlwin)
-
 FILE_CATEGORIES = ["Photo", "Video", "Audio", "Other"]
 file_extensions = {
     "Photo": ["png", "jpg", "jpeg", "avif", "webp", "jfif", "gif", "tiff", "bmp"],
