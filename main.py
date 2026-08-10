@@ -12,7 +12,11 @@ def categorize_file(extension):
         if extension in v:
             return k
     return FILE_CATEGORIES[-1]
-    
+
+if not os.path.exists("sorted"):
+    os.makedirs("sorted")
+if not os.path.exists("unsorted"):
+    os.makedirs("unsorted")
 
 for cat in FILE_CATEGORIES:
     if not os.path.exists(f"sorted/{cat}"):
